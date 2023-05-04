@@ -12,8 +12,8 @@ function integersSent() {
   let sum = 0;
 
   //getting the user's two inputted numbers that will be used to calculate the product
-  let firstNum = parseInt(document.getElementById("first-number").value);
-  let secondNum = parseInt(document.getElementById("second-number").value);
+  let firstNum = parseFloat(document.getElementById("first-number").value);
+  let secondNum = parseFloat(document.getElementById("second-number").value);
 
   //for loop to do repeated addition to find the product
   for (let counter = 1; counter <= secondNum; counter++) {
