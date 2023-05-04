@@ -1,0 +1,28 @@
+/* Created by: Zoia
+* Created on: May 2023
+* This CSS file defines the style for index.html
+* ICS2O-Unit5-02-HTML-ProductOfNumbers
+*/
+
+body {
+  width: 80%;
+  margin: 5% 10%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #929dbf;
+}
+
+h1 {
+  color: white;
+  background-color: #98899a;
+  text-align: center;
+  padding: 30px;
+}
+
+
+#results {
+  padding: 20px 30px;
+  background-color: #59917f;
+  color: #53546f;
+  font-weight: bold;
+  margin-top: 30px;
+}

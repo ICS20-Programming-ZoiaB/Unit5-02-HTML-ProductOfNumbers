@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Product of Numbers Webpage">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="ZoiaB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <!-- Title -->
+    <title>Product of Numbers Webpage</title>
+  </head>
+  <body>
+    
+    <!-- Link to JS file -->
+    <script src="./js/script.js"></script>
+    
+    <!-- Div for background colour -->
+    <h1>Product of Numbers Webpage</h1>
+    <h3>This is a products webpage.</h3>
+    <p>Input positive integers and their product will be calculated.</p>
+    <h3>Enter your input:</h3>
+     
+      <!-- Form for user input -->
+      <form action="javascript:integersSent()">
+        <label for="first number">Enter a positive integer:</label>
+        <input type="number" step="1" min="0" id="first-number" placeholder="An integer..."><br><br>
+        <label for="second number">Enter another positive integer:</label>
+        <input type="number" min="0" step="1" id="second-number" placeholder="Another integer..."><br><br>
+        <input type="submit" value="Submit Numbers" id="styled-button">
+      </form>
+    
+    <!-- Div for results to be displayed -->
+    <div id="results" name="results"></div>
+  </body>
+</html>
