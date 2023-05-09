@@ -1,4 +1,4 @@
-// Copyright (c) 2022 ZoiaB All rights reserved
+// Copyright (c) 2023 ZoiaB All rights reserved
 //
 // Created by: ZoiaB
 // Created on: May 2023
@@ -19,6 +19,7 @@ function integersSent() {
   for (let counter = 1; counter <= secondNum; counter++) {
     sum = sum + firstNum;
   }
+  
   //displaying the sum/product to the screen
   document.getElementById("results").innerHTML = "The product of your selected two numbers is " + sum + ".";
 }
