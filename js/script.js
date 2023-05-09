@@ -4,22 +4,41 @@
 // Created on: May 2023
 // This file contains the JS functions for index.html
 
-"use strict"
+"use strict";
 
 function integersSent() {
-  
-  //initialize variable for sum
-  let sum = 0;
 
-  //getting the user's two inputted numbers that will be used to calculate the product
-  let firstNum = parseFloat(document.getElementById("first-number").value);
-  let secondNum = parseFloat(document.getElementById("second-number").value);
+  //Initializing product variable and getting numbers from user
+  let product = 0;
+  let firstNum = parseInt(document.getElementById("first-number").value);
+  let secondNum = parseInt(document.getElementById("second-number").value);
 
-  //for loop to do repeated addition to find the product
-  for (let counter = 1; counter <= secondNum; counter++) {
-    sum = sum + firstNum;
+  //If statement to give an error message if nothing nothing is entered or if numbers are invalid
+  if (isNaN(firstNum) || isNaN(secondNum)) {
+    document.getElementById("results").innerHTML = "Please enter valid numbers.";
+    return;
   }
-  
-  //displaying the sum/product to the screen
-  document.getElementById("results").innerHTML = "The product of your selected two numbers is " + sum + ".";
+
+  // Determine whether the product is positive or negative
+  let isNegative = false;
+  if ((firstNum < 0 && secondNum > 0) || (firstNum > 0 && secondNum < 0)) {
+    isNegative = true;
+  }
+
+  // Take the absolute value to do multiplication
+  firstNum = Math.abs(firstNum);
+  secondNum = Math.abs(secondNum);
+
+  //For loop to execute repeated addition that will result in the product.
+  for (let counter = 0; counter < secondNum; counter++) {
+    product = product + firstNum;
+  }
+
+  //If statement to make sure that if one of the numbers is negative, the product will be negative
+  if (isNegative) {
+    product = product * -1;
+  }
+
+  //Displaying the product of the numbers to the user
+  document.getElementById("results").innerHTML = "The product of the two numbers is " + product + ".";
 }
