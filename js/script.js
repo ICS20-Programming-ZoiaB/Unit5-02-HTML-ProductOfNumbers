@@ -26,16 +26,16 @@ function integersSent() {
   }
 
   // Take the absolute value to do multiplication
-  firstNum = Math.abs(firstNum);
-  secondNum = Math.abs(secondNum);
+  let firstNumAbsolute = Math.abs(firstNum);
+  let secondNumAbsolute = Math.abs(secondNum);
 
   //For loop to execute repeated addition that will result in the product.
-  for (let counter = 0; counter < secondNum; counter++) {
-    product = product + firstNum;
+  for (let counter = 0; counter < secondNumAbsolute; counter++) {
+    product = product + firstNumAbsolute;
   }
 
   //If statement to make sure that if one of the numbers is negative, the product will be negative
-  if (isNegative) {
+  if ((firstNum < 0 && secondNum > 0) || (firstNum > 0 && secondNum < 0)) {
     product = product * -1;
   }
 
