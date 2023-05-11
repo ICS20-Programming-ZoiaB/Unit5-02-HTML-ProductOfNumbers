@@ -28,7 +28,7 @@ function integersSent() {
     for (let counter = 0; counter < secondNumAbsolute; counter++) {
       product = product + firstNumAbsolute;
     }
-      }
+  }
 
   //If statement to make sure that if one of the numbers is negative, the product will be negative
   if ((firstNum < 0 && secondNum > 0) || (firstNum > 0 && secondNum < 0)) {
@@ -36,5 +36,5 @@ function integersSent() {
   }
 
   //Displaying the product of the numbers to the user
-  document.getElementById("results").innerHTML = "The product of the two numbers is " + product + ".";
+  document.getElementById("results").innerHTML = "The product of your two selected numbers is " + product + ".";
 }
